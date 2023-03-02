@@ -1,0 +1,265 @@
+/* Rubik font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+.fw-bold {
+  font-weight: 500 !important;
+}
+
+.btn-primary {
+  background-color: #5368df;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: #5368df !important;
+  border: 1px solid #5368df;
+}
+
+.btn-gray {
+  background-color: #f7f7f7;
+}
+
+.btn-gray:hover {
+  background-color: white;
+  color: #252b46 !important;
+  border: 1px solid #252b46;
+}
+
+.btn-gray-2 {
+  background-color: #9194a1;
+}
+
+.btn-danger {
+  background-color: #fa5757;
+}
+
+.btn-danger:hover {
+  background-color: white;
+  color: #fa5757 !important;
+  border: 1px solid #fa5757;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+}
+
+body main#hero {
+  margin-top: 10rem;
+}
+
+body main#hero::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 600px;
+  height: 400px;
+  border-radius: 100% 0 0 100%;
+  z-index: -1;
+  background-color: #5368df;
+}
+
+body .navbar {
+  z-index: 99999;
+  background-color: white;
+}
+
+body .navbar .navbar-nav {
+  width: 30rem;
+}
+
+body .navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+body .hero-image {
+  background-color: transparent;
+}
+
+body article #features {
+  width: 50%;
+}
+
+body article #features .container p {
+  width: 70%;
+}
+
+body article .features_links {
+  border-bottom: solid #adb5bd 1px;
+}
+
+body article .features_links .collapse_feature {
+  position: relative;
+}
+
+body article .features_links .collapse_feature input.radio-btn {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  bottom: 50%;
+  opacity: 0;
+}
+
+body article .features_links .collapse_feature input.radio-btn:checked ~ label {
+  color: black !important;
+}
+
+body article .features_links .collapse_feature input.radio-btn:checked ~ label::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #fa5757;
+}
+
+body article .features_links .collapse_feature label:hover {
+  color: #fa5757;
+  cursor: pointer;
+}
+
+body article #feature::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 600px;
+  height: 400px;
+  border-radius: 0 100% 100% 0;
+  z-index: -1;
+  background-color: #5368df;
+}
+
+body article #pricing {
+  margin-top: 12rem;
+}
+
+body article #pricing #extension-list {
+  height: 450px;
+}
+
+body article #pricing #extension-list .box {
+  width: 300px;
+  height: 370px;
+}
+
+body article .accordion .accordion-item .accordion-button:hover {
+  color: #fa5757;
+}
+
+body article .accordion .accordion-item .accordion-button:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 transparent;
+}
+
+body article .accordion .accordion-item .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: black;
+}
+
+body footer {
+  background-color: #5368df;
+  padding-top: 6rem;
+}
+
+body footer .container p.user_joined {
+  letter-spacing: 6px;
+}
+
+body footer .container .invalid-feedback {
+  color: inherit !important;
+  background-color: #fa5757 !important;
+  margin-top: 0 !important;
+}
+
+body footer nav.navbar {
+  background-color: #252b46;
+}
+
+body footer nav.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+body footer nav.navbar a:hover {
+  color: #fa5757;
+}
+
+@media (max-width: 992px) {
+  body .navbar {
+    position: fixed;
+  }
+  body .navbar .navbar-brand {
+    padding: 10px;
+  }
+  body .navbar .navbar-nav {
+    height: 100vh;
+    display: block !important;
+    width: auto;
+  }
+  body .navbar ul {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  body .navbar ul li.nav-item {
+    padding: 4px 0;
+  }
+  body .navbar ul li.nav-item:nth-child(odd) {
+    border-top: 1px solid #adb5bd;
+    border-bottom: 1px solid #adb5bd;
+  }
+  body .navbar ul li.nav-item a.nav-link {
+    color: white;
+  }
+  body .navbar ul li.nav_login {
+    margin-top: 2rem;
+  }
+  body .navbar ul li.nav_login button {
+    width: 100%;
+    background: transparent;
+    border-color: initial;
+  }
+  body main#hero::before {
+    bottom: 200px;
+    width: 80%;
+    height: 50%;
+  }
+  body article #features {
+    width: 90%;
+  }
+  body article #features p {
+    width: 100%;
+  }
+  body article #features .features_links {
+    border-bottom: 0;
+  }
+  body article #features .features_links .collapse_feature:nth-child(odd) {
+    border-top: 2px solid #adb5bd;
+    border-bottom: 2px solid #adb5bd;
+  }
+  body article #features .features_links .collapse_feature input.radio-btn:checked ~ label::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    right: 30%;
+    background-color: #fa5757;
+  }
+  body article #feature::before {
+    width: 90%;
+    height: 50%;
+  }
+  body article #feature .column_1 img {
+    width: 90vw;
+  }
+  body article #feature .column_2 {
+    margin-top: 100px;
+  }
+  body .w-50 {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
